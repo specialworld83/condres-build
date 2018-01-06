@@ -1,0 +1,16 @@
+/install/
+/out/
+/work/
+/dev/
+/master/
+/airootfs/install/
+/boot/
+/airootfs/var
+/pacman.conf
+*.swp
+.*.swp
+build.log
+*.log
+.#*
+cinnamon.sh
+/freezedry/gen.toml

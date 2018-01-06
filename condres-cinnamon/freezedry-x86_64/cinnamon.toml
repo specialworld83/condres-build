@@ -1,0 +1,29 @@
+inherits = "desktop.toml"
+
+[pacman]
+    [pacman.packages]
+    desktop_environment = [
+        "cinnamon",
+        "mutter",
+        "network-manager-applet",
+    ]
+    customizations = [
+        'super-flat-remix-icon-theme',
+	'flatplat-theme-git',
+    ]
+
+[cinnamon]
+gtk_theme = "Materia-compact"
+shell_theme = "Materia-compact"
+icon_theme = "Flat-Remix"
+wallpaper = "file:///usr/share/backgrounds/condres/condres_tux.png"
+gtk_button_layout = ":minimize,maximize,close"
+    [cinnamon.favorite_apps]
+    apps = ["google-chrome.desktop",
+            "ice.desktop",
+            "gnome-music.desktop",
+            "gnome-terminal.desktop",
+            "org.gnome.gedit.desktop",
+            "pamac-manager.desktop",
+            "nemo.desktop",
+            "calamares.desktop"]
