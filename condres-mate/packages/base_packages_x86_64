@@ -7,7 +7,7 @@ condres-wallpapers
 condres-themes-gnome
 condres-settings-manager 
 condres-welcome
-condres-distro
+condres-permission
 condres-schemas
 condres-libreoffice-theme
 plymouth-theme-condres
@@ -17,6 +17,7 @@ super-flat-remix-icon-theme
 mhwd
 mhwd-db
 firefox
+condres-browser-settings
 arc-gtk-theme
 gvim
 caja
@@ -40,7 +41,7 @@ vlc
 thunderbird
 pamac
 zsh
-python-powerline-git
+python-powerline-condres
 yaourt
 networkmanager
 gnome-terminal

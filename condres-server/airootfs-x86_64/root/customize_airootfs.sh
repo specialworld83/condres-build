@@ -20,12 +20,12 @@ passwd -d liveuser
 echo 'Created User'
 
 # Setup Pacman
- pacman-key --init archlinux
- pacman-key --populate archlinux
- pacman-key --init
- pacman-key --init condres
- pacman-key --populate condres
- pacman-key --populate
+# pacman-key --init archlinux
+# pacman-key --populate archlinux
+# pacman-key --init
+# pacman-key --init condres
+# pacman-key --populate condres
+# pacman-key --populate
 # pacman -Syy
 # pacman-key --refresh-keys
 

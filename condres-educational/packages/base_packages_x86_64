@@ -6,7 +6,7 @@ condres-vim
 condres-wallpapers
 condres-settings-manager 
 condres-welcome
-condres-distro
+condres-permission
 condres-schemas
 condres-libreoffice-theme
 plymouth-theme-condres
@@ -20,6 +20,7 @@ tuxpaint
 mhwd
 mhwd-db
 firefox
+condres-browser-settings
 arc-gtk-theme
 gvim
 caja
@@ -43,7 +44,7 @@ vlc
 thunderbird
 pamac
 zsh
-python-powerline-git
+python-powerline-condres
 yaourt
 networkmanager
 flatplat-theme
