@@ -5,13 +5,14 @@ condres-icons
 condres-vim
 condres-wallpapers
 condres-settings-manager 
-condres-welcome
+welcome
 condres-permission
 condres-schemas
 condres-libreoffice-theme
 plymouth-theme-condres
 materia-condres-theme 
 pacman-condres
+btrfs-progs
 veyon
 squid-gui 
 super-flat-remix-icon-theme

@@ -6,13 +6,14 @@ condres-vim
 condres-wallpapers
 condres-themes-gnome
 condres-settings-manager 
-condres-welcome
+welcome
 condres-permission
 condres-schemas
 condres-welcome
 condres-libreoffice-theme
 plymouth-theme-condres
 materia-condres-theme 
+btrfs-progs
 pacman-condres
 super-flat-remix-icon-theme
 cower
