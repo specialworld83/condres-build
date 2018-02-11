@@ -20,14 +20,14 @@ passwd -d liveuser
 echo 'Created User'
 
 # Setup Pacman
-# pacman-key --init archlinux
-# pacman-key --populate archlinux
-# pacman-key --init
-# pacman-key --init condres
-# pacman-key --populate condres
-# pacman-key --populate
-# pacman -Syy
-# pacman-key --refresh-keys
+ pacman-key --init archlinux
+ pacman-key --populate archlinux
+ pacman-key --init
+ pacman-key --init condres
+ pacman-key --populate condres
+ pacman-key --populate
+ pacman -Syy
+ pacman-key --refresh-keys
 
 #Edit Mirrorlist
 	sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
@@ -59,16 +59,21 @@ arch=`uname -m`
 if [ "$arch" == "x86_64" ]
 then
 sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /usr/share/applications/hplip.desktop || /bin/true
-	cp -f /etc/apricity-assets/playonlinux.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux15.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux15.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
 	rm -f /root/install.txt
 	echo "$(cat /etc/mkinitcpio.conf)"
 #Enable Calamares Autostart
 	mkdir -p /home/liveuser/.config/autostart
+	mkdir -p /home/liveuser/Desktop
 	ln -fs /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+	chown liveuser:users /home/liveuser/Desktop/
+	chown liveuser:users /home/liveuser/Desktop/calamares.desktop
+	chmod +x /home/liveuser/Desktop/calamares.desktop
+	chmod 777 -R /home/liveuser/Desktop/
 	chmod 777 /home/liveuser/Desktop/calamares.desktop
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
 #Set Nano Editor
@@ -82,10 +87,10 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	chown -R root /etc/sudoers.d
 	echo "Enabled Sudo"
 #Set Apricity Grub Theme
-	/etc/apricity-assets/Elegant_Dark/install.sh || /bin/true
+	/etc/condres-assets/Elegant_Dark/install.sh || /bin/true
 #Enable Apricity Plymouth Theme
 	#sed -i.bak 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
-	#chown -R root.root /usr/share/plymouth/themes/apricity
+	#chown -R root.root /usr/share/plymouth/themes/condres
 	plymouth-set-default-theme -R condres
 	mkinitcpio -p linux
 	grub-mkconfig -o /boot/grub/grub.cfg
@@ -97,11 +102,11 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 else
 	echo "i686"
 sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /usr/share/applications/hplip.desktop || /bin/true
-	cp -f /etc/apricity-assets/playonlinux.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux15.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux15.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/condres-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
 	rm -f /root/install.txt
 	echo "$(cat /etc/mkinitcpio.conf)"
 #Enable Calamares Autostart
@@ -121,10 +126,10 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	chown -R root /etc/sudoers.d
 	echo "Enabled Sudo"
 #Set Apricity Grub Theme
-	/etc/apricity-assets/Elegant_Dark/install.sh || /bin/true
+	/etc/condres-assets/Elegant_Dark/install.sh || /bin/true
 #Enable Apricity Plymouth Theme
 	#sed -i.bak 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
-	#chown -R root.root /usr/share/plymouth/themes/apricity
+	#chown -R root.root /usr/share/plymouth/themes/condres
 	plymouth-set-default-theme -R condres
 	mkinitcpio -p linux
 	grub-mkconfig -o /boot/grub/grub.cfg
