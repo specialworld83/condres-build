@@ -26,8 +26,8 @@ echo 'Created User'
  pacman-key --init condres
  pacman-key --populate condres
  pacman-key --populate
- pacman -Syy
- pacman-key --refresh-keys
+ #pacman -Syy
+ #pacman-key --refresh-keys
 
 #Edit Mirrorlist
 	sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
