@@ -12,12 +12,13 @@ Condres OS ( https://condresos.codelinsoft.it/ )
 ####Condres's Goal: Simple, Beautiful Linux
 
 ####What's Condres OS
+
 Condres OS is an Arch Linux-based distribution with a nice-looking default interface, useful preinstalled applications, and two editions (more coming soon!). The idea is that if your Linux distribution works well as soon as you install it, you have to do less work. If you then decide to installCondres on another machine, everything still works.
 
 ####What's configured out of the box?
 **Desktop Environment (DE) Theme:** This is mainly the Gnome or Cinnamon top or bottom panel, respectively. For Gnome, it also includes how the activities' overview, workspace switching, and the dock look. For Cinnamon, this also includes workspace switching, the application menu, and the window overview. The Gnome shell theme is custom built forCondres, and the Cinnamon theme is based on Arc.
 
-**GTK Theme:**Condres uses [Arc GTK](https://github.com/horst3180/arc-theme) by default, but post something on [Gitter](https://gitter.im/Condres-OS/Condres-build) if you know of other great-looking GTK themes.
+**GTK Theme:**Condres uses [Materia THEME](https://github.com/nana-4/materia-theme) by default.
 
 **DE Extensions:** Gnome is a little unintuitive and clunky to use normally, but the Gnome developers have made it easy for other developers to customize its functionality with extensions. The extensions that are enabled by default inCondres are as follows:
 - Caffeine
@@ -32,7 +33,7 @@ Condres OS is an Arch Linux-based distribution with a nice-looking default inter
 - Topicons
 - User themes
 
-**Icons:** Application icons come by default as `numix-circle`, and the various symbolic and mimetype icons are a combination of `vimix` and `paper`.
+**Icons:** Application icons come by default as `flat-remix`, and the various symbolic and mimetype icons are a combination of `vimix` and `paper`.
 
 **Terminal:**Condres uses `zsh` and `powerline-shell` in its default terminal.
 
@@ -40,7 +41,7 @@ Condres OS is an Arch Linux-based distribution with a nice-looking default inter
 
 Also of note:Condres's Vim uses a slightly modified version of the [Monokai](https://github.com/sickill/vim-monokai) colorscheme.
 
-####What applications are included inCondres?
+####What applications are included in Condres?
 
 - Pamac (Add/Remove Software; Software Update)
 - File Roller (Archive Manager)
@@ -75,6 +76,8 @@ Also of note:Condres's Vim uses a slightly modified version of the [Monokai](htt
 - Transmission
 - Tweak Tool (Only on Gnome)
 - Totem (Gnome-Videos)
+
+and other desktop: PLASMA - XFCE - CINNAMON AND MATE
 
 ####So you want to contribute?
 That's great! Fork *this* repository, pull it to your local machine, and start by building a version of the ISO. You'll need to be running something Arch-based, since you need to install `archiso` to run the build scripts. Then run `su -c './build.sh -v -E gnome -R true'`, type your root password, and watch as `mkarchiso` does its magic. (If I forgot to put a dependency here, please create an [issue](https://github.com/specialworld83/condres-build/issues))
