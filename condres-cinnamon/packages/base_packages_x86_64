@@ -268,7 +268,7 @@ xorg-fonts
 xorg-server
 xorg-xinit
 xorg-xkill
-zd1211-firmware
+
 boost
 boost-libs
 icu
