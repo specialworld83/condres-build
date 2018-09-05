@@ -106,7 +106,6 @@ libmtp
 broadcom-wl-dkms
 ipw2100-fw
 ipw2200-fw
-zd1211-firmware
 modemmanager
 net-tools
 networkmanager-openvpn
