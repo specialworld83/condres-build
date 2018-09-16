@@ -274,3 +274,14 @@ boost-libs
 icu
 libmtp
 xz
+cinnamon
+cinnamon-control-center
+cinnamon-desktop
+cinnamon-menus
+cinnamon-screensaver
+cinnamon-session
+cinnamon-settings-daemon
+cinnamon-translations
+cjs
+muffin
+nemo
