@@ -3,6 +3,7 @@
 pacman-key --init
 pacman-key --populate archlinux
 pacman-key --populate condres
+pacman-key --refresh-keys
 
 set -e -u
 edition=cinnamon
