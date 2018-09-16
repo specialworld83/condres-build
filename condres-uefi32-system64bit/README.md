@@ -27,8 +27,10 @@ iso_file variable in the runnerfile.sh script to point to it. In a future
 release, this will be automated too.*
 
 To build a new ISO, you'll need to first install the bash-task-runner:
+    
+    cd condres-uefi32-system64bit
 
-    npm install
+    npm install bash-task-runner
 
 Then, you can simply call the runnerfile.sh script to generate the ISO:
 
