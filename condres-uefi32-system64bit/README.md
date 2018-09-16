@@ -50,3 +50,12 @@ There are other tasks available, you can first unpack the ISO
     ./runnerfile.sh unpack
     # modify ISO contents as needed
     ./runnerfile.sh 
+
+# create ISO usb
+Use etcher. 
+
+  pacman -S etcher
+  
+# Screenshoot
+
+![Etcher](https://etcher.io/static/screenshot.gif)
