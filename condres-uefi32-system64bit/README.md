@@ -6,7 +6,15 @@ image.
 Our distro now supports 32-bit boot on 64-bit systems. Tablets or 2 in 1 are supported. The iso image that is supported is with desktop xfce, as light and fast and suitable for everyone's needs.
 
 
-First of all, open the file runner.sh and modify line 24 specifying where is the iso image of condres that you want to adapt with efi32 on 64-bit systems.
+First of all, open the file 
+    
+    runner.sh 
+
+and modify line 24 
+
+    iso_file="src/iso/condres_os-18.09-xfce.iso"
+
+specifying where is the iso image of condres that you want to adapt with efi32 on 64-bit systems.
 
 # Dependencies
 
