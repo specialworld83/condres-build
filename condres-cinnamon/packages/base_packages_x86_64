@@ -113,7 +113,6 @@ xorg-xinit
 xorg-xkill
 mkinitcpio-openswap
 cronie
-gksu
 xdg-user-dirs-gtk
 virtualbox-guest-utils
 gnome-backgrounds
