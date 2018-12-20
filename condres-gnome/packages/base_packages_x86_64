@@ -214,7 +214,6 @@ pkgfile
 plymouth
 plymouth-theme-condres
 cower
-pacaur
 efitools
 dosfstools
 python-lxml
