@@ -24,7 +24,7 @@ cd `dirname ${0}`
 source node_modules/bash-task-runner/src/runner.sh
 
 # This should point to the original Condres ISO downloaded.
-iso_file="src/iso/condres_os-18.09-xfce.iso"
+iso_file="src/iso/condres_os-19.01-xfce.iso"
 filename=$(basename "$iso_file")
 filename="${filename%.*}"
 
