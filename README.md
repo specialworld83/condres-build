@@ -4,7 +4,7 @@
 
 
 
-SupportCondres on (https://www.codelinsoft.it/sito/2015-02-18-23-59-25/donate.html)
+SupportCondres on (https://condresos.codelinsoft.it/index.php/donate)
 Condres OS ( https://condresos.codelinsoft.it/ )
 
 
@@ -43,7 +43,7 @@ Also of note:Condres's Vim uses a slightly modified version of the [Monokai](htt
 
 ####What applications are included in Condres?
 
-- Pamac (Add/Remove Software; Software Update)
+- Octopi (Add/Remove Software; Software Update)
 - File Roller (Archive Manager)
 - Gnome-Calculator
 - Gnome-Calendar
@@ -86,4 +86,4 @@ Once you've built an image, you can test it with `gnome-boxes`, `virtualbox`, or
 
 Now pick something to work on. Take a look at [TODO.md] for ideas. Once you've finished your feature or fixed your bug, submit a [pull request](https://help.github.com/articles/using-pull-requests/). If everything looks good, it will get incorporated first into the `dev` branch, then later into the `stable` branch!
 # condres-build
-# build
+
