@@ -1,0 +1,15 @@
+[Desktop Entry]
+Comment=Condres Bug Tracking System
+_Comment=Condres Bug Tracking System
+Comment[ca]=Sistema de seguiment d'errors de Condres
+Comment[de]=Condres Fehlerbeseitigungs-System
+Exec=xdg-open https://condresos.codelinsoft.it/index.php/support/bug-traker
+Icon=tools-report-bug
+Name=Bugs
+_Name=Bugs
+Name[ca]=Errors
+Name[de]=Fehler
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Condres;

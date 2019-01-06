@@ -1,0 +1,21 @@
+[Desktop Entry]
+Comment=Condres Donations
+_Comment=Condres Donations
+Comment[ca]=Donacions a Condres
+Comment[ca@valencia]=Donacions a Condres
+Comment[de]=Spende für Condres
+Comment[en_US]=Condres Donations
+Comment[es]=Donaciones a Condres
+Exec=xdg-open https://condresos.codelinsoft.it/index.php/donate
+Icon=love
+Name=Donate
+_Name=Donate
+Name[ca]=Donacions
+Name[ca@valencia]=Dona
+Name[de]=Spende
+Name[en_US]=Donate
+Name[es]=Dona
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Condres;
