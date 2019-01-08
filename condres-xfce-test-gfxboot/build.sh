@@ -135,11 +135,11 @@ make_boot_extra() {
 # Prepare /${install_dir}/boot/syslinux
 make_syslinux() {
     mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux
-    for _cfg in ${script_path}/syslinux-${arch}/*.cfg; do
-        sed "s|%ARCHISO_LABEL%|${iso_label}|g;
-             s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/isolinux.cfg
-        sed "s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/gfxboot.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/gfxboot.cfg
-    done
+    mkdir -p ${work_dir}/iso/${install_dir}/boot/isolinux
+        sed "s|%ARCHISO_LABEL%|${iso_label}"
+    cp ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/isolinux.cfg
+    cp ${script_path}/isolinux/gfxboot.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/gfxboot.cfg
+    cp ${script_path}/isolinux/* ${work_dir}/iso/${install_dir}/boot/isolinux/
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/*.c32 ${work_dir}/iso/${install_dir}/boot/syslinux
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/lpxelinux.0 ${work_dir}/iso/${install_dir}/boot/syslinux
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/memdisk ${work_dir}/iso/${install_dir}/boot/syslinux
@@ -149,8 +149,8 @@ make_syslinux() {
 }
 # Prepare /isolinux to gfxboot
 make_isolinux() {
-    mkdir -p ${work_dir}/iso/${install_dir}/boot/isolinux
-    cp ${script_path}/isolinux_boot/* ${work_dir}/iso/${install_dir}/boot/isolinux
+    mkdir -p ${work_dir}/boot/isolinux
+    cp ${script_path}/isolinux/* ${work_dir}/boot/isolinux
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/isolinux.bin ${work_dir}/iso/isolinux/
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/isohdpfx.bin ${work_dir}/iso/isolinux/
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/ldlinux.c32 ${work_dir}/iso/isolinux/
