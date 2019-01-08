@@ -149,7 +149,7 @@ make_syslinux() {
 # Prepare /isolinux to gfxboot
 make_isolinux() {
     mkdir -p ${work_dir}/boot/isolinux
-    sed "s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/isolinux/isolinux.cfg
+    sed "s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/isolinux/isolinux.cfg
     cp ${script_path}/isolinux/* ${work_dir}/boot/isolinux
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/isolinux.bin ${work_dir}/iso/isolinux/
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/isohdpfx.bin ${work_dir}/iso/isolinux/
