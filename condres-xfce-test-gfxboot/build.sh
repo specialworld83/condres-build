@@ -136,7 +136,7 @@ make_boot_extra() {
 make_syslinux() {
     mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux
         sed "s|%ARCHISO_LABEL%|${iso_label}|g;
-             s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/
+             s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/isolinux.cfg
         sed "s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/gfxboot.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/gfxboot.cfg
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/*.c32 ${work_dir}/iso/${install_dir}/boot/syslinux
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/lpxelinux.0 ${work_dir}/iso/${install_dir}/boot/syslinux
@@ -145,26 +145,7 @@ make_syslinux() {
     gzip -c -9 ${work_dir}/${arch}/airootfs/usr/share/hwdata/pci.ids > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/pciids.gz
     gzip -c -9 ${work_dir}/${arch}/airootfs/usr/lib/modules/*-ARCH/modules.alias > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/modalias.gz
 }
-# Prepare /isolinux to gfxboot
-make_isolinux() {
-    mkdir -p ${work_dir}/iso/isolinux
-    sed "s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/isolinux/isolinux.cfg
-    cp ${script_path}/isolinux/* ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/isolinux.bin ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/isohdpfx.bin ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/ldlinux.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/libcom32.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/liblua.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/libgpl.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/libmenu.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/libutil.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/mboot.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/whichsys.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/chain.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/gfxboot.c32 ${work_dir}/iso/isolinux/
-    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/hdt.c32 ${work_dir}/iso/isolinux/
-    
-}
+
 
 # Prepare /EFI
 make_efi() {
@@ -325,7 +306,6 @@ done
 # Do all stuff for "iso"
 run_once make_boot_extra
 run_once make_syslinux
-run_once make_isolinux
 run_once make_efi
 run_once make_efiboot
 
