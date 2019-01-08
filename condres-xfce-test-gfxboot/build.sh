@@ -138,7 +138,7 @@ make_syslinux() {
     mkdir -p ${work_dir}/iso/isolinux
         sed "s|%ARCHISO_LABEL%|${iso_label}|g;
              s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/boot/syslinux/isolinux.cfg
-    cp ${script_path}/isolinux/isolinux.cfg ${work_dir}/boot/syslinux/gfxboot.cfg
+    cp ${script_path}/isolinux/gfxboot.cfg ${work_dir}/boot/syslinux/gfxboot.cfg
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/*.c32 ${work_dir}/iso/${install_dir}/boot/syslinux
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/lpxelinux.0 ${work_dir}/iso/${install_dir}/boot/syslinux
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/memdisk ${work_dir}/iso/${install_dir}/boot/syslinux
