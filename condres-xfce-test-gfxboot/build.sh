@@ -132,10 +132,22 @@ make_boot_extra() {
     cp ${work_dir}/${arch}/airootfs/usr/share/licenses/intel-ucode/LICENSE ${work_dir}/iso/${install_dir}/boot/intel_ucode.LICENSE
 }
 
-
+# Prepare /${install_dir}/boot/syslinux
+make_syslinux() {
+    mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux
+    mkdir -p ${work_dir}/iso/isolinux
+        sed "s|%ARCHISO_LABEL%|${iso_label}|g;
+             s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/boot/syslinux/isolinux.cfg
+    cp ${script_path}/isolinux/isolinux.cfg ${work_dir}/boot/syslinux/gfxboot.cfg
+    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/*.c32 ${work_dir}/iso/${install_dir}/boot/syslinux
+    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/lpxelinux.0 ${work_dir}/iso/${install_dir}/boot/syslinux
+    cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/memdisk ${work_dir}/iso/${install_dir}/boot/syslinux
+    mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux/hdt
+    gzip -c -9 ${work_dir}/${arch}/airootfs/usr/share/hwdata/pci.ids > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/pciids.gz
+    gzip -c -9 ${work_dir}/${arch}/airootfs/usr/lib/modules/*-ARCH/modules.alias > ${work_dir}/iso/${install_dir}/boot/syslinux/hdt/modalias.gz
+}
 # Prepare /isolinux to gfxboot
 make_isolinux() {
-    mkdir -p ${work_dir}/iso/isolinux
     sed "s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/isolinux/isolinux.cfg
     cp ${script_path}/isolinux/* ${work_dir}/iso/isolinux/
     cp ${work_dir}/${arch}/airootfs/usr/lib/syslinux/bios/isolinux.bin ${work_dir}/iso/isolinux/
