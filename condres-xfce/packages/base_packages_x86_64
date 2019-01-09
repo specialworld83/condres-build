@@ -44,7 +44,11 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 vlc
 thunderbird
-pamac
+octopi
+octopi-cachecleaner
+octopi-notifier-qt5
+octopi-pacmanhelper
+octopi-repoeditor
 zsh
 python-powerline-condres
 yaourt

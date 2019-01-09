@@ -25,7 +25,11 @@ gvim
 gnome-shell-extensions
 vlc
 thunderbird
-pamac
+octopi
+octopi-cachecleaner
+octopi-notifier-qt5
+octopi-pacmanhelper
+octopi-repoeditor
 zsh
 gnome-backgrounds
 python-powerline-condres

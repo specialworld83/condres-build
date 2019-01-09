@@ -35,7 +35,11 @@ dbus
 gvim
 vlc
 thunderbird
-pamac
+octopi
+octopi-cachecleaner
+octopi-notifier-qt5
+octopi-pacmanhelper
+octopi-repoeditor
 python-powerline-condres
 yaourt
 networkmanager
