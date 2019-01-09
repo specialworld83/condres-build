@@ -1,3 +1,4 @@
+gfxboot
 plymouth-theme-condres
 condres-freezedry
 condresassets
@@ -8,7 +9,6 @@ condres-wallpapers
 condres-themes-gnome
 condres-settings-manager 
 welcome
-condres-permission
 condres-schemas
 condres-lamp
 condres-libreoffice-theme

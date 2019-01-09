@@ -1,9 +1,9 @@
+gfxboot
 condres-freezedry
 condresassets
 condres-cli-installer
 condres-keyring
 condres-settings-manager 
-condres-permission
 condres-schemas
 btrfs-progs
 pacman-condres
