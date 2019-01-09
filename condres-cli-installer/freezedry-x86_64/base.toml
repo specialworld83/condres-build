@@ -2,14 +2,10 @@
 keyrings = ["archlinux"]
     [pacman.packages]
     base = [
-        "base",
-        "base-devel",
-        "linux-firmware",
-       
+        
     ]
     bootloader = [
-        "grub",
-        "os-prober",
+        
     ]
     cli_editor = ["nano", "vim"]
     shell_tools = [
@@ -53,31 +49,10 @@ keyrings = ["archlinux"]
         "mkinitcpio-openswap",
     ]
     fonts = [
-        "ttf-arphic-uming",
-        "ttf-baekmuk",
-        "ttf-bitstream-vera",
-        "ttf-dejavu",
-        "ttf-droid",
-        "ttf-freefont",
-        "ttf-liberation",
+        
     ]
     net = [
-        "wireless_tools",
-        "wpa_actiond",
-        "whois",
-        "tlp",
-        "libmtp",
-        "broadcom-wl-dkms",
-        "ipw2100-fw",
-        "ipw2200-fw",
-        "zd1211-firmware",
-        "modemmanager",
-        "net-tools",
-        "networkmanager-openvpn",
-        "networkmanager-pptp",
-        "ntfs-3g",
-        "ntp",
-        "samba",
+        
     ]
     print_drivers = [
         "cups",
@@ -87,15 +62,10 @@ keyrings = ["archlinux"]
         "splix",
     ]
     audio_drivers = [
-        "alsa-utils",
-        "lib32-alsa-plugins",
-        "pulseaudio-alsa",
+       
     ]
     input_drivers = [
-        "usbmuxd",
-        "usb_modeswitch",
-        "libinput",
-        "xf86-input-libinput",
+        
     ]
     xorg = [
         "xorg-fonts",
