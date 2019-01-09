@@ -72,7 +72,10 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	chown liveuser:users /home/liveuser/Desktop/
 	chmod 777 -R /home/liveuser/Desktop/
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
-#Set Nano Editor
+#Set Nano Editor and chrome
+    export _BROWSER=google-chrome-stable
+    echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment
+    echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/profile
 	export _EDITOR=nano
 	echo "EDITOR=${_EDITOR}" >> /etc/environment
 	echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
@@ -110,6 +113,9 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
 	
 #Set Nano Editor
+    export _BROWSER=google-chrome-stable
+    echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment
+    echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/profile
 	export _EDITOR=nano
 	echo "EDITOR=${_EDITOR}" >> /etc/environment
 	echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
