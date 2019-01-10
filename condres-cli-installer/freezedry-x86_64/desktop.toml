@@ -4,7 +4,6 @@ inherits = "base.toml"
 
 [pacman]
     [pacman.packages]
-    display_manager = ["lightdm",]
     cli_editor = ["nano", "gvim"]
     aur_manager = [
     ]
@@ -30,21 +29,6 @@ inherits = "base.toml"
         "eog",
         "system-config-printer",
         "sushi",
-    ]
-    desktop_apps = [
-        "filezilla",
-        "gimp",
-        "rhythmbox",
-        "ice-ssb",
-        "inkscape",
-        "playonlinux",
-        "steam",
-        "syncthing-gtk",
-        "totem",
-        "transmission-cli",
-        "transmission-gtk",
-        "gufw",
-        "wine",
     ]
     bluetooth = [
         "bluez-utils",
@@ -73,8 +57,6 @@ inherits = "base.toml"
     bluetooth = [
         "bluetooth",
     ]
-    lightdm = [
-        "lightdm-plymouth",
-    ]
+    
 
 

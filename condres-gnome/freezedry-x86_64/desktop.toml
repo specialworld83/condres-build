@@ -73,8 +73,8 @@ inherits = "base.toml"
     bluetooth = [
         "bluetooth",
     ]
-    lightdm = [
-        "lightdm-plymouth",
+    gdm = [
+        "gdm-plymouth",
     ]
 
 
