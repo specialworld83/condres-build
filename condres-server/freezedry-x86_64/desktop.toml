@@ -4,7 +4,7 @@ inherits = "base.toml"
 
 [pacman]
     [pacman.packages]
-    display_manager = ["lightdm",]
+    display_manager = ["gdm",]
     cli_editor = ["nano", "gvim"]
     aur_manager = [
     ]
