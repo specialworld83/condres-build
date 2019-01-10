@@ -7,6 +7,8 @@ condres-settings-manager
 condres-schemas
 btrfs-progs
 pacman-condres
+plymouth
+plymouth-theme-condres
 mhwd
 mhwd-db
 nano
@@ -17,6 +19,7 @@ linux-headers
 linux
 lsb-release
 bash-completion
+networkmanager
 xz
 dosfstools
 efitools
