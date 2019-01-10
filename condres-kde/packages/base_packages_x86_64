@@ -75,6 +75,7 @@ boost-libs
 refind-efi
 rfkill
 sudo
+kdesu
 smartmontools
 tar
 unrar
