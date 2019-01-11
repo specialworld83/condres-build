@@ -69,8 +69,13 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 #Enable Calamares Autostart
 	mkdir -p /home/liveuser/.config/autostart
 	mkdir -p /home/liveuser/Desktop
+	ln -fs /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+	ln -fs /usr/share/icons/Flat-Remix/apps/scalable/calamares.svg /usr/share/icons/calamares.png
 	chown liveuser:users /home/liveuser/Desktop/
+	chown liveuser:users /home/liveuser/Desktop/calamares.desktop
+	chmod +x /home/liveuser/Desktop/calamares.desktop
 	chmod 777 -R /home/liveuser/Desktop/
+	chmod 777 /home/liveuser/Desktop/calamares.desktop
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
 #Set Nano Editor
 	export _BROWSER=google-chrome-stable
@@ -110,6 +115,9 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	echo "$(cat /etc/mkinitcpio.conf)"
 #Enable Calamares Autostart
 	mkdir -p /home/liveuser/.config/autostart
+	mkdir -p /home/liveuser/Desktop
+	ln -fs /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+	chmod 777 /home/liveuser/Desktop/calamares.desktop
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
 #Set Nano Editor
 	export _BROWSER=google-chrome-stable
