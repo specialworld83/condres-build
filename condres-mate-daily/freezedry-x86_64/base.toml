@@ -1,0 +1,106 @@
+[pacman]
+keyrings = ["archlinux"]
+    [pacman.packages]
+    base = [
+        
+    ]
+    bootloader = [
+        
+    ]
+    cli_editor = ["nano", "vim"]
+    shell_tools = [
+        "bash-completion",
+        "xz",
+        "bind-tools",
+        "crda",
+        "dosfstools",
+        "efitools",
+        "fakeroot",
+        "fuse-exfat",
+        "gvfs-afc",
+        "jre8-openjdk",
+        "gucharmap",
+        "gzip",
+        "haveged",
+        "hunspell",
+        "mc",
+        "mtools",
+        "openssh",
+        "pkgfile",
+        "python-lxml",
+        "python-mako",
+        "python-mock",
+        "boost",
+        "boost-libs",
+        "refind-efi",
+        "rfkill",
+        "sudo",
+        "smartmontools",
+        "tar",
+        "unrar",
+        "unzip",
+        "wget",
+        "icu",
+    ]
+    # installer = [
+    #     "calamares"
+    # ]
+    luks = [
+        "mkinitcpio-openswap",
+    ]
+    fonts = [
+        
+    ]
+    net = [
+        
+    ]
+    print_drivers = [
+        "cups",
+        "cups-pk-helper",
+        "libcups",
+        "hplip",
+        "splix",
+    ]
+    audio_drivers = [
+       
+    ]
+    input_drivers = [
+        
+    ]
+    xorg = [
+        "xorg-fonts",
+        "xorg-server",
+        "xorg-server-utils",
+        "xorg-xinit",
+        "xorg-xkill",
+        # "xorg-apps",
+    ]
+    video_drivers = [
+        "mesa-libgl",
+        "mesa",
+        "lib32-mesa-libgl",
+        "mesa-vdpau",
+        "x264",
+    ]
+
+
+[systemd]
+    [systemd.services]
+    print = [
+        "org.cups.cupsd",
+    ]
+    net = [
+        "NetworkManager",
+        "ModemManager",
+        # "smbd",
+        # "nmbd",
+	"ntpd",
+        "avahi-daemon"
+    ]
+    base = [
+        "graphical.target",
+        "systemd-rfkill"
+    ]
+    # pacman = [
+    #     "pacman-init",
+    # ]
