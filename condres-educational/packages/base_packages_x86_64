@@ -1,6 +1,7 @@
 virtualbox-guest-modules-arch
 gksu
 gfxboot
+nemo
 condres-freezedry
 condresassets
 condres-keyring

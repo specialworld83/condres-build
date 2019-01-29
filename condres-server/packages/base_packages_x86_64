@@ -1,6 +1,7 @@
 virtualbox-guest-modules-arch
 gksu
 gfxboot
+nemo
 plymouth-theme-condres
 condres-freezedry
 condresassets
