@@ -4,6 +4,7 @@ condresassets
 condres-cli-installer
 condres-keyring
 condres-settings-manager 
+condres-control-center
 condres-schemas
 btrfs-progs
 pacman-condres
