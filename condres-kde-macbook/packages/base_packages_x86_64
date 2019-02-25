@@ -1,6 +1,7 @@
 virtualbox-guest-dkms
 virtualbox-host-dkms
 linux-macbook
+linux-macbook-headers
 condres-control-center
 gfxboot
 condres-freezedry
