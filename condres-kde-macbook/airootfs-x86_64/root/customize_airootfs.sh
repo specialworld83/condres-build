@@ -138,6 +138,7 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
    # systemctl enable pacman-init.service lightdm.service choose-mirror.service
    systemctl disable gdm.service    
    systemctl enable sddm-plymouth.service
+   systemctl enable --now macbook-wakeup.service
    # systemctl enable avahi-daemon.service
    # systemctl enable vboxservice.service
    # systemctl enable haveged
