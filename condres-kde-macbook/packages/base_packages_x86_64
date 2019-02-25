@@ -1,4 +1,5 @@
-virtualbox-guest-modules-arch
+virtualbox-guest-dkms
+virtualbox-host-dkms
 linux-macbook
 condres-control-center
 gfxboot

@@ -1,4 +1,5 @@
-virtualbox-guest-modules-arch
+virtualbox-guest-dkms
+virtualbox-host-dkms
 gksu
 condres-control-center
 gfxboot

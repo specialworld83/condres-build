@@ -1,5 +1,6 @@
 gksu
-virtualbox-guest-modules-arch
+virtualbox-guest-dkms
+virtualbox-host-dkms
 condres-control-center
 gfxboot
 condres-freezedry
