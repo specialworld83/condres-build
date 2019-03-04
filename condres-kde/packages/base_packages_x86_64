@@ -1,5 +1,6 @@
 virtualbox-guest-dkms
 virtualbox-host-dkms
+cryptsetup
 condres-control-center
 gfxboot
 condres-freezedry

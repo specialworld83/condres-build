@@ -1,5 +1,6 @@
 virtualbox-guest-dkms
 virtualbox-host-dkms
+cryptsetup
 condres-control-center
 gksu
 xfce4-whiskermenu-plugin

@@ -55,6 +55,7 @@ python-powerline-condres
 yaourt
 networkmanager
 gnome-terminal
+cryptsetup
 flatplat-theme
 nano
 base
