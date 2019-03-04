@@ -14,6 +14,7 @@ chmod -R 755 /etc/sudoers.d
 chmod -R 755 /etc/sudoers
 
 #Create Liveuser
+groupadd -r autologin
 id -u liveuser &>/dev/null || useradd -m "liveuser" -g users -G "autologin,adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel"
 passwd -d liveuser
 #rm /home/liveuser/.config/autostart/firstrun.desktop
