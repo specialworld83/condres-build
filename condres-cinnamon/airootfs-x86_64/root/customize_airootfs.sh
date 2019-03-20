@@ -17,8 +17,10 @@ chmod -R 755 /etc/sudoers
 groupadd -r autologin
 groupadd -r nopasswdlogin
 
+
 id -u liveuser &>/dev/null || useradd -m "liveuser" -g users -G "autologin,adm,audio,floppy,log,network,rfkill,scanner,storage,nopasswdlogin,optical,power,wheel"
 passwd -d liveuser
+gpasswd -a liveuser autologin
 #rm /home/liveuser/.config/autostart/firstrun.desktop
 echo 'Created User'
 
