@@ -40,9 +40,7 @@ gnome-backgrounds
 python-powerline-condres
 yaourt
 networkmanager
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+gdm
 nano
 base
 base-devel

@@ -143,7 +143,7 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
  #   sed -i /etc/pam.d/su -e 's/auth      sufficient  pam_wheel.so trust use_uid/#auth        sufficient  pam_wheel.so trust use_uid/'
    # systemctl enable pacman-init.service lightdm.service choose-mirror.service
    systemctl disable gdm.service    
-   systemctl enable lightdm-plymouth.service
+   systemctl enable gdm-plymouth.service
    # systemctl enable avahi-daemon.service
    # systemctl enable vboxservice.service
    # systemctl enable haveged

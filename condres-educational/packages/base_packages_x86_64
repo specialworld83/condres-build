@@ -44,9 +44,7 @@ mate-session-manager
 mate-settings-daemon
 mate-themes
 mate-user-guide
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+gdm
 vlc
 thunderbird
 octopi

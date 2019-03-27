@@ -45,9 +45,7 @@ xfdesktop
 xfwm4
 xfwm4-themes
 xfce4-power-manager
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+gdm
 vlc
 thunderbird
 octopi
