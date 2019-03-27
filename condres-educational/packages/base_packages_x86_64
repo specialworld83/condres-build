@@ -21,6 +21,10 @@ pacman-condres
 btrfs-progs
 veyon
 squid-gui 
+mate-terminal
+mate-power-manager
+mate-user-share
+trizen
 super-flat-remix-icon-theme
 gcompris-qt 
 tuxpaint
@@ -47,11 +51,6 @@ mate-user-guide
 gdm
 vlc
 thunderbird
-octopi
-octopi-cachecleaner
-octopi-notifier
-octopi-pacmanhelper
-octopi-repoeditor
 zsh
 python-powerline-condres
 yaourt

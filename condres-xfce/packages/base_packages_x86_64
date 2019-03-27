@@ -48,11 +48,7 @@ xfce4-power-manager
 gdm
 vlc
 thunderbird
-octopi
-octopi-cachecleaner
-octopi-notifier
-octopi-pacmanhelper
-octopi-repoeditor
+trizen
 zsh
 python-powerline-condres
 yaourt

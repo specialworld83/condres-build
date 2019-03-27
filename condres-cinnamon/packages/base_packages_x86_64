@@ -1,5 +1,6 @@
 cryptsetup
 gksu
+trizen
 virtualbox-guest-dkms
 virtualbox-host-dkms
 condres-control-center

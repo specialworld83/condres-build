@@ -43,11 +43,10 @@ mate-user-guide
 gdm
 vlc
 thunderbird
-octopi
-octopi-cachecleaner
-octopi-notifier
-octopi-pacmanhelper
-octopi-repoeditor
+mate-terminal
+mate-power-manager
+mate-user-share
+trizen
 zsh
 python-powerline-condres
 yaourt
