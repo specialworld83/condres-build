@@ -167,7 +167,6 @@ pulseaudio-bluetooth
 bluez
 bluez-libs
 bluez-utils
-bluez-firmware
 grilo-plugins
 faac
 faad2
