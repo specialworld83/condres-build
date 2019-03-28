@@ -68,6 +68,7 @@ pkgfile
 python-lxml
 python-mako
 python-mock
+cinnamon-brandring-condres
 boost
 boost-libs
 refind-efi
