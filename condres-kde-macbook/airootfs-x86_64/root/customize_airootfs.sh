@@ -72,6 +72,8 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	chown liveuser:users /home/liveuser/Desktop/
 	chmod 777 -R /home/liveuser/Desktop/
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
+	#Remove system-tray Condre Control Center
+rm -rf /etc/xdg/autostart/NotifierControlCenter.desktop
 #Set Nano Editor
 	export _BROWSER=google-chrome-stable
     echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment
@@ -111,6 +113,8 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 #Enable Calamares Autostart
 	mkdir -p /home/liveuser/.config/autostart
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
+	#Remove system-tray Condre Control Center
+rm -rf /etc/xdg/autostart/NotifierControlCenter.desktop
 #Set Nano Editor
 	export _BROWSER=google-chrome-stable
     echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment

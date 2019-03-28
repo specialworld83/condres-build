@@ -53,6 +53,11 @@ zsh
 python-powerline-condres
 yaourt
 networkmanager
+octopi 
+octopi-cachecleaner 
+octopi-notifier 
+octopi-pacmanhelper 
+octopi-repoeditor
 nano
 base
 base-devel

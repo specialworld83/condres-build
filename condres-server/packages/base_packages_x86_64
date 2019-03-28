@@ -34,6 +34,11 @@ gvim
 gnome-shell-extensions
 vlc
 trizen
+octopi 
+octopi-cachecleaner 
+octopi-notifier 
+octopi-pacmanhelper 
+octopi-repoeditor
 zsh
 gnome-backgrounds
 python-powerline-condres

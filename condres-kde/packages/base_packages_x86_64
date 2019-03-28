@@ -40,6 +40,11 @@ gvim
 vlc
 thunderbird
 trizen
+octopi 
+octopi-cachecleaner 
+octopi-notifier 
+octopi-pacmanhelper 
+octopi-repoeditor
 python-powerline-condres
 yaourt
 networkmanager

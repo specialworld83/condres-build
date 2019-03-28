@@ -74,6 +74,11 @@ boost-libs
 refind-efi
 rfkill
 sudo
+octopi 
+octopi-cachecleaner 
+octopi-notifier 
+octopi-pacmanhelper 
+octopi-repoeditor
 smartmontools
 tar
 unrar

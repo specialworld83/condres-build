@@ -83,6 +83,11 @@ python-mock
 boost
 boost-libs
 refind-efi
+octopi 
+octopi-cachecleaner 
+octopi-notifier 
+octopi-pacmanhelper 
+octopi-repoeditor
 condres-settings-manager 
 condres-schemas
 lsb-release

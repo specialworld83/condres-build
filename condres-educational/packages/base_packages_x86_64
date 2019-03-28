@@ -84,6 +84,11 @@ python-mako
 python-mock
 boost
 boost-libs
+octopi 
+octopi-cachecleaner 
+octopi-notifier 
+octopi-pacmanhelper 
+octopi-repoeditor
 refind-efi
 condres-settings-manager 
 condres-schemas

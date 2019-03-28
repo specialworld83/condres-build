@@ -35,6 +35,11 @@ trizen
 gnome-backgrounds
 python-powerline-condres
 yaourt
+octopi 
+octopi-cachecleaner 
+octopi-notifier 
+octopi-pacmanhelper 
+octopi-repoeditor
 networkmanager
 gdm
 nano
