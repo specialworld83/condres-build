@@ -62,8 +62,8 @@ task_efi32loader() {
     check_target_dir;
 
     runner_run grub-mkstandalone \
-        -d /usr/lib/grub/i386-efi/ \
-        -O i386-efi \
+        -d /usr/lib/grub/i386-pc/ \
+        -O i386-multiboot \
         --modules="part_gpt part_msdos" \
         --fonts="unicode" \
         --themes="" \
