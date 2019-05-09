@@ -109,7 +109,7 @@ ttf-droid
 ttf-freefont
 ttf-liberation
 wireless_tools
-wpa_actiond
+pushbullet
 whois
 tlp
 libmtp
@@ -259,7 +259,7 @@ wireless_tools
 #nvidia-libgl
 #nvidia-utils
 #nvidia
-wpa_actiond
+pushbullet
 x264
 xdg-user-dirs-gtk
 #xf86-input-synaptics

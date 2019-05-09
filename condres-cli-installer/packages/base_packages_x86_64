@@ -41,7 +41,6 @@ unzip
 wget
 icu
 wireless_tools
-wpa_actiond
 whois
 tlp
 libmtp
