@@ -253,7 +253,6 @@ wireless_tools
 #nvidia-libgl
 #nvidia-utils
 #nvidia
-wpa_actiond
 x264
 xdg-user-dirs-gtk
 #xf86-input-synaptics
