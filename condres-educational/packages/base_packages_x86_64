@@ -10,8 +10,7 @@ condresassets
 condres-keyring
 condres-icons
 condres-vim
-condres-wallpapers
-condres-settings-manager 
+condres-wallpapers 
 welcome
 condres-schemas
 condres-libreoffice-theme
@@ -84,13 +83,7 @@ python-mako
 python-mock
 boost
 boost-libs
-octopi 
-octopi-cachecleaner 
-octopi-notifier 
-octopi-pacmanhelper 
-octopi-repoeditor
 refind-efi
-condres-settings-manager 
 condres-schemas
 lsb-release
 plymouth-theme-condres

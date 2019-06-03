@@ -12,8 +12,7 @@ condres-keyring
 condres-icons
 condres-vim
 condres-wallpapers
-condres-themes-gnome
-condres-settings-manager 
+condres-themes-gnome 
 welcome
 condres-schemas
 condres-lamp
@@ -34,11 +33,6 @@ gvim
 gnome-shell-extensions
 vlc
 trizen
-octopi 
-octopi-cachecleaner 
-octopi-notifier 
-octopi-pacmanhelper 
-octopi-repoeditor
 zsh
 gnome-backgrounds
 python-powerline-condres

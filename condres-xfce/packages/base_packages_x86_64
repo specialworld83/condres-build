@@ -10,7 +10,6 @@ condres-keyring
 condres-icons
 condres-vim
 condres-wallpapers
-condres-settings-manager 
 welcome
 gfxboot
 condres-desktop-settings
@@ -54,11 +53,6 @@ zsh
 python-powerline-condres
 yaourt
 networkmanager
-octopi 
-octopi-cachecleaner 
-octopi-notifier 
-octopi-pacmanhelper 
-octopi-repoeditor
 nano
 base
 base-devel
@@ -88,7 +82,6 @@ python-mock
 boost
 boost-libs
 refind-efi
-condres-settings-manager 
 condres-schemas
 lsb-release
 plymouth-theme-condres

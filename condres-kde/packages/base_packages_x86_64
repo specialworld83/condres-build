@@ -10,7 +10,6 @@ condres-icons
 condres-vim
 condres-wallpapers
 condres-themes-gnome
-condres-settings-manager 
 welcome
 condres-schemas
 condres-welcome
@@ -40,11 +39,6 @@ gvim
 vlc
 thunderbird
 trizen
-octopi 
-octopi-cachecleaner 
-octopi-notifier 
-octopi-pacmanhelper 
-octopi-repoeditor
 python-powerline-condres
 yaourt
 networkmanager

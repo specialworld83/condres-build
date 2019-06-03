@@ -12,7 +12,6 @@ condres-icons
 condres-vim
 condres-wallpapers
 condres-themes-gnome
-condres-settings-manager 
 welcome
 condres-schemas
 condres-libreoffice-theme
@@ -27,7 +26,6 @@ mhwd-db
 firefox
 condres-browser-settings
 arc-gtk-theme
-condres-settings-manager 
 condres-schemas
 lsb-release
 plymouth-theme-condres
@@ -74,11 +72,6 @@ boost-libs
 refind-efi
 rfkill
 sudo
-octopi 
-octopi-cachecleaner 
-octopi-notifier 
-octopi-pacmanhelper 
-octopi-repoeditor
 smartmontools
 tar
 unrar
