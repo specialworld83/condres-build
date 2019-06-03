@@ -22,7 +22,7 @@ inherits = "desktop.toml"
 [gnome]
 gtk_theme = "Artic Condres"
 shell_theme = "Artic Condres"
-icon_theme = "condres_icons"
+icon_theme = "Numix Circle"
 wallpaper = "file:///usr/share/backgrounds/condres/tahoe.jpg"
 lock_background = "file:///usr/share/backgrounds/condres/tahoe.jpg"
 gtk_button_layout = ":minimize,maximize,close"
