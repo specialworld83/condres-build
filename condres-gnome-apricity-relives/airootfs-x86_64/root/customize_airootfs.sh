@@ -64,6 +64,8 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	cp -f /etc/condres-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/gdm/99_condres-apricity.gschema.override /usr/share/glib-2.0/schemas/ || /bin/true
+	glib-compile-schemas /usr/share/glib-2.0/schemas/
 	rm -f /root/install.txt
 	echo "$(cat /etc/mkinitcpio.conf)"
 #Enable Calamares Autostart
@@ -71,7 +73,6 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	mkdir -p /home/liveuser/Desktop
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
 	#Remove system-tray Condre Control Center
-rm -rf /etc/xdg/autostart/NotifierControlCenter.desktop
 #Set Nano Editor
 	export _BROWSER=google-chrome-stable
     echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment
@@ -106,6 +107,8 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	cp -f /etc/condres-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
+	cp -f /etc/gdm/99_condres-apricity.gschema.override /usr/share/glib-2.0/schemas/ || /bin/true
+	glib-compile-schemas /usr/share/glib-2.0/schemas/
 	rm -f /root/install.txt
 	echo "$(cat /etc/mkinitcpio.conf)"
 #Enable Calamares Autostart

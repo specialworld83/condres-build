@@ -70,8 +70,6 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	mkdir -p /home/liveuser/.config/autostart
 	mkdir -p /home/liveuser/Desktop
 	ln -fs /usr/share/applications/welcome.desktop /home/liveuser/.config/autostart/welcome.desktop
-	#Remove system-tray Condre Control Center
-rm -rf /etc/xdg/autostart/NotifierControlCenter.desktop
 #Set Nano Editor
 	export _BROWSER=google-chrome-stable
     echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment

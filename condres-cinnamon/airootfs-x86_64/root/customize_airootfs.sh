@@ -80,8 +80,6 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 #Enable autostart cinnamon
 	mv /usr/share/xsessions/gnome.desktop /usr/share/xsessions/gnome-normal.desktop
 	ln -fs /usr/share/xsessions/cinnamon.desktop  /usr/share/xsessions/gnome.desktop
-#Remove system-tray Condre Control Center
-rm -rf /etc/xdg/autostart/NotifierControlCenter.desktop
 #Set Nano Editor and chrome
     export _BROWSER=google-chrome-stable
     echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment
@@ -124,8 +122,6 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 #Enable autostart cinnamon
 	mv /usr/share/xsessions/gnome.desktop /usr/share/xsessions/gnome-normal.desktop
 	ln -fs /usr/share/xsessions/cinnamon.desktop  /usr/share/xsessions/gnome.desktop
-#Remove system-tray Condre Control Center
-rm -rf /etc/xdg/autostart/NotifierControlCenter.desktop
 #Set Nano Editor
     export _BROWSER=google-chrome-stable
     echo "BROWSER=/usr/bin/${_BROWSER}" >> /etc/environment
