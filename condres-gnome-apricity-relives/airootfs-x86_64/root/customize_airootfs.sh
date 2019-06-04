@@ -64,7 +64,6 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	cp -f /etc/condres-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/gdm/99_condres-apricity.gschema.override /usr/share/glib-2.0/schemas/ || /bin/true
 	glib-compile-schemas /usr/share/glib-2.0/schemas/
 	rm -f /root/install.txt
 	echo "$(cat /etc/mkinitcpio.conf)"
@@ -107,8 +106,6 @@ sed -i 's@Icon=/usr/share/hplip/data/images/128x128/hp_logo.png@Icon=hplip@' /us
 	cp -f /etc/condres-assets/playonlinux16.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux22.png /usr/share/playonlinux/etc || /bin/true
 	cp -f /etc/condres-assets/playonlinux32.png /usr/share/playonlinux/etc || /bin/true
-	cp -f /etc/gdm/99_condres-apricity.gschema.override /usr/share/glib-2.0/schemas/ || /bin/true
-	glib-compile-schemas /usr/share/glib-2.0/schemas/
 	rm -f /root/install.txt
 	echo "$(cat /etc/mkinitcpio.conf)"
 #Enable Calamares Autostart
@@ -144,6 +141,7 @@ rm -rf /etc/xdg/autostart/NotifierControlCenter.desktop
    # systemctl enable pacman-init.service lightdm.service choose-mirror.service
    systemctl disable gdm.service    
    systemctl enable gdm-plymouth.service
+   	glib-compile-schemas /usr/share/glib-2.0/schemas/
    # systemctl enable avahi-daemon.service
    # systemctl enable vboxservice.service
    # systemctl enable haveged
