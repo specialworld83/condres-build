@@ -1,8 +1,8 @@
 [pacman]
 keyrings = ["archlinux"]
     [pacman.packages]
-    base = ["pantheon-git-meta"
-        
+    base = ["granite-git",
+    "pantheon-git-meta",
     ]
     bootloader = [
         

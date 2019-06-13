@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacman -Rdd granite
+
 
 #Archiso Stuff
 set -e -u
