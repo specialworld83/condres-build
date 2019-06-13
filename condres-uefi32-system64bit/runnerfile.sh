@@ -125,7 +125,7 @@ task_dist() {
         -e EFI/archiso/efiboot.img \
         -no-emul-boot \
         -isohybrid-gpt-basdat \
-        -output target/condres_os-19.05-efi32-system64.iso \
+        -output target/condres_os-19.06-efi32-system64.iso \
         target/iso
 }
 

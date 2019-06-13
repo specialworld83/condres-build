@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Cedy
+GenericName=Cedy
+Icon=/usr/share/icons/cedy-app-list.png
+Comment=Install codecs and additional software to Condres OS
+Exec=cedy
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=clean;codec;fix;install;proprietary;
