@@ -181,8 +181,7 @@ make_efi() {
         
         cp ${work_dir}/x86_64/airootfs/usr/lib/systemd/boot/efi/systemd-bootx64.efi ${work_dir}/iso/EFI/boot/loader.efi
     fi
-    #Fix boot macbook
-    cp ${work_dir}/${arch}/airootfs/boot/vmlinuz-linux-macbook ${work_dir}/iso/EFI/archiso/vmlinuz-linux-macbook
+
     mkdir -p ${work_dir}/iso/loader/entries
     cp ${script_path}/efiboot/loader/loader.conf ${work_dir}/iso/loader/
 
@@ -206,6 +205,8 @@ make_efi() {
 # Prepare efiboot.img::/EFI for "El Torito" EFI boot mode
 make_efiboot() {
     mkdir -p ${work_dir}/iso/EFI/archiso
+    #Fix boot macbook
+    cp ${work_dir}/${arch}/airootfs/boot/vmlinuz-linux-macbook ${work_dir}/efiboot/EFI/archiso/vmlinuz-linux-macbook
     truncate -s 64M ${work_dir}/iso/EFI/archiso/efiboot.img
     mkfs.vfat -n ARCHISO_EFI ${work_dir}/iso/EFI/archiso/efiboot.img
 
