@@ -206,7 +206,7 @@ make_efi() {
 make_efiboot() {
     mkdir -p ${work_dir}/iso/EFI/archiso
     #Fix boot macbook
-    cp ${work_dir}/${arch}/airootfs/boot/vmlinuz-linux-macbook ${work_dir}/efiboot/EFI/archiso/vmlinuz-linux-macbook
+    cp ${work_dir}/${arch}/airootfs/boot/vmlinuz-linux-macbook ${work_dir}/iso/EFI/archiso/vmlinuz-linux-macbook
     truncate -s 64M ${work_dir}/iso/EFI/archiso/efiboot.img
     mkfs.vfat -n ARCHISO_EFI ${work_dir}/iso/EFI/archiso/efiboot.img
 
