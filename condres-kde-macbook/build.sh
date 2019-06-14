@@ -178,10 +178,11 @@ make_efi() {
         echo 'adding efi tools'
         cp ${work_dir}/x86_64/airootfs/usr/share/efitools/efi/PreLoader.efi ${work_dir}/iso/EFI/boot/bootx64.efi
         cp ${work_dir}/x86_64/airootfs/usr/share/efitools/efi/HashTool.efi ${work_dir}/iso/EFI/boot/
-
+        
         cp ${work_dir}/x86_64/airootfs/usr/lib/systemd/boot/efi/systemd-bootx64.efi ${work_dir}/iso/EFI/boot/loader.efi
     fi
-
+    #Fix boot macbook
+    cp ${work_dir}/${arch}/airootfs/boot/vmlinuz-linux-macbook ${work_dir}/iso/EFI/archiso/vmlinuz-linux-macbook
     mkdir -p ${work_dir}/iso/loader/entries
     cp ${script_path}/efiboot/loader/loader.conf ${work_dir}/iso/loader/
 
