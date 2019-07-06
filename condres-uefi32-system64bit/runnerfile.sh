@@ -24,7 +24,7 @@ cd `dirname ${0}`
 source node_modules/bash-task-runner/src/runner.sh
 
 # This should point to the original Condres ISO downloaded.
-iso_file="src/iso/condres_os-19.06-xfce.iso"
+iso_file="src/iso/condres_os-19.07-xfce.iso"
 filename=$(basename "$iso_file")
 filename="${filename%.*}"
 
@@ -125,7 +125,7 @@ task_dist() {
         -e EFI/archiso/efiboot.img \
         -no-emul-boot \
         -isohybrid-gpt-basdat \
-        -output target/condres_os-19.06-efi32-system64.iso \
+        -output target/condres_os-19.07-efi32-system64.iso \
         target/iso
 }
 
