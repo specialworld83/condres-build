@@ -1,4 +1,6 @@
 pyqt5-common
+appimage
+snapd
 python-pyqt5 
 python2-pyqt5
 virtualbox-guest-dkms
